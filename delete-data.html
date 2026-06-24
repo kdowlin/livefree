@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Delete Your Data — Live Free</title>
+  <meta name="description" content="How to request deletion of your data for the Live Free app, operated by Accountable, Inc.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAF8F3;
+      --surface: #ffffff;
+      --ink: #1F2D34;
+      --muted: #5b6970;
+      --line: #e7e2d8;
+      --coral: #fb877a;
+      --coral-ink: #b5483c;
+      --teal: #7B9BA8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 48px 0 80px; }
+
+    header.brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 28px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--line);
+    }
+    header.brand img.mark { width: 38px; height: 38px; display: block; }
+    header.brand .wordmark {
+      font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      font-size: 26px;
+      letter-spacing: -1px;
+      color: var(--ink);
+      line-height: 1;
+    }
+    header.brand .by { font-size: 13px; color: var(--muted); margin-top: 3px; }
+
+    h1 {
+      font-size: clamp(28px, 6vw, 38px);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .lede { font-size: 17px; color: var(--muted); margin-bottom: 8px; }
+    .updated { font-size: 13px; color: var(--muted); margin-bottom: 40px; }
+
+    h2 {
+      font-size: 21px;
+      letter-spacing: -0.01em;
+      font-weight: 700;
+      margin: 40px 0 14px;
+    }
+    h3 { font-size: 16px; font-weight: 600; margin: 22px 0 6px; }
+    p { margin-bottom: 14px; }
+    a { color: var(--coral-ink); text-decoration: underline; text-underline-offset: 2px; }
+    a:hover { color: var(--coral); }
+
+    ul, ol { margin: 0 0 16px 0; padding-left: 22px; }
+    li { margin-bottom: 8px; }
+
+    .callout {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin: 24px 0;
+    }
+    .callout.accent { border-left: 4px solid var(--coral); }
+
+    ol.steps { counter-reset: step; list-style: none; padding-left: 0; }
+    ol.steps > li {
+      position: relative;
+      padding-left: 46px;
+      margin-bottom: 18px;
+      min-height: 32px;
+    }
+    ol.steps > li::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    ol.steps > li strong { display: block; margin-bottom: 2px; }
+
+    .email-btn {
+      display: inline-block;
+      background: var(--ink);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 13px 22px;
+      border-radius: 10px;
+      margin-top: 6px;
+    }
+    .email-btn:hover { background: #16232a; color: #fff; }
+
+    table { width: 100%; border-collapse: collapse; margin: 14px 0 20px; font-size: 15px; }
+    th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { font-weight: 600; background: rgba(123,155,168,0.10); }
+    td:first-child { width: 38%; font-weight: 600; }
+
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 9px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .tag.del { background: rgba(251,135,122,0.18); color: var(--coral-ink); }
+    .tag.kept { background: rgba(123,155,168,0.20); color: #3f5a64; }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      font-size: 14px;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); }
+    .footer-links { margin-top: 10px; display: flex; gap: 18px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="brand">
+      <img class="mark" src="brand-mark-ink.png" alt="" aria-hidden="true">
+      <div>
+        <div class="wordmark">live free</div>
+        <div class="by">by Accountable, Inc.</div>
+      </div>
+    </header>
+
+    <h1>Delete your data</h1>
+    <p class="lede">This page explains how to request deletion of your data from <strong>Live Free</strong>, the recovery app operated by <strong>Accountable,&nbsp;Inc.</strong></p>
+    <p class="updated">Last updated: June 24, 2026</p>
+
+    <p>Live Free is built to be private by design. It has <strong>no account</strong>, and the recovery information you create lives only on your own phone and your personal cloud backup — it is never sent to or stored by Accountable, Inc. The only information that reaches our servers is a limited set of analytics and diagnostic data, described below.</p>
+
+    <h2>How to request deletion</h2>
+
+    <h3>1. On-device data — delete it yourself, instantly</h3>
+    <div class="callout accent">
+      <p style="margin-bottom:10px"><strong>Uninstall the Live Free app</strong> from your phone. Everything Live Free stored on the device — your recovery path, daily goal, your “reasons” (text and photos), check-ins, pledges, and streaks — is removed with it. No request to us is needed.</p>
+      <p style="margin-bottom:0">To also remove the encrypted backup copy held in <strong>your own</strong> cloud account:</p>
+      <ul style="margin-top:10px; margin-bottom:0">
+        <li><strong>iPhone (iCloud):</strong> Settings → [your name] → iCloud → <em>Manage Account Storage</em>, or turn iCloud off for Live Free.</li>
+        <li><strong>Android (Google Drive backup):</strong> Google Drive app → <em>Backups</em>, or Settings → Google → Backup, and delete the Live Free backup.</li>
+      </ul>
+    </div>
+
+    <h3>2. Data on our servers — email us to delete it</h3>
+    <div class="callout">
+      <ol class="steps">
+        <li>
+          <strong>Email us at livefree@youareaccountable.com</strong>
+          Use the same email address you entered in the Live Free app, if you provided one.
+        </li>
+        <li>
+          <strong>Put “Delete my data” in the subject line</strong>
+          If you didn’t share an email in the app, include any name or details you gave us so we can locate your records.
+        </li>
+        <li>
+          <strong>We confirm and delete</strong>
+          We’ll verify the request and permanently delete your data from our analytics systems, then email you to confirm.
+        </li>
+      </ol>
+      <a class="email-btn" href="mailto:livefree@youareaccountable.com?subject=Delete%20my%20data&amp;body=Please%20delete%20the%20data%20associated%20with%20my%20Live%20Free%20account.%0A%0AEmail%20I%20used%20in%20the%20app%20(if%20any)%3A%20%0AName%20(if%20provided)%3A%20">Email livefree@youareaccountable.com</a>
+    </div>
+
+    <h2>What data is deleted, and what is kept</h2>
+    <p>The table below covers the limited data Live Free sends to our servers (via our analytics processor, PostHog). On-device data is not listed because it never reaches us — it is deleted when you uninstall the app (see step 1).</p>
+
+    <table>
+      <thead>
+        <tr><th>Data type</th><th>On a deletion request</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Email address and name (if you provided them)</td><td><span class="tag del">Deleted</span></td></tr>
+        <tr><td>Push notification token (if you enabled reminders)</td><td><span class="tag del">Deleted</span></td></tr>
+        <tr><td>Anonymous app-usage and diagnostic data — screens opened, taps, app performance, crash and error logs, and session recordings (with all typed text hidden)</td><td><span class="tag del">Deleted</span></td></tr>
+        <tr><td>Records we are legally required to retain (e.g. for tax, security, or fraud-prevention), if any</td><td><span class="tag kept">Kept only as required by law, then deleted</span></td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <h3 style="margin-top:0">We never collect your health information</h3>
+      <p style="margin-bottom:0">By design, Live Free does <strong>not</strong> send us any health or recovery details — never your sober date, the substance or focus of your recovery, your streak length, or your precise location or address. There is no such data on our servers to delete.</p>
+    </div>
+
+    <h2>Retention period</h2>
+    <ul>
+      <li><strong>On-device data:</strong> deleted immediately when you uninstall the app; the personal cloud backup is removed when you delete it from your iCloud or Google account.</li>
+      <li><strong>Server data:</strong> deleted from our active analytics systems within <strong>30 days</strong> of a verified request, and purged from routine backups shortly after.</li>
+      <li><strong>Legal holds:</strong> a small subset of records may be retained longer only where required by law or to prevent fraud and abuse, and is deleted once that purpose ends.</li>
+    </ul>
+
+    <h2>Questions</h2>
+    <p>If you have any questions about deleting your data, contact Accountable, Inc. at <a href="mailto:livefree@youareaccountable.com">livefree@youareaccountable.com</a>.</p>
+
+    <footer>
+      <div>Live Free is operated by Accountable, Inc.</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:livefree@youareaccountable.com">Contact</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
